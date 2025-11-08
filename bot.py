@@ -28,4 +28,7 @@ async def hello(interaction: discord.Interaction):
 
 
 # Run your bot
-bot.run(os.getenv("TOKEN"))
+# bot.run(os.getenv("TOKEN"))
+bot.run(getenv("TOKEN"))
+
+
