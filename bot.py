@@ -31,7 +31,8 @@ async def hello(interaction: discord.Interaction):
 
 # Run your bot
 # bot.run("RlBqCxyhM1kGCxQU0ivp31F-qCipNnYi")
-bot.run(os.getenv('TOKEN'))
+bot.run(os.getenv("TOKEN"))
+
 
 
 
