@@ -1,3 +1,4 @@
+import os
 import discord
 from discord import app_commands
 from discord.ext import commands
@@ -28,7 +29,7 @@ async def hello(interaction: discord.Interaction):
 
 
 # Run your bot
-# bot.run(os.getenv("TOKEN"))
-bot.run(getenv("TOKEN"))
+bot.run(os.getenv("TOKEN"))
+
 
 
