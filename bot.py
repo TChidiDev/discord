@@ -1,8 +1,8 @@
+import os
 import discord
 from discord.ext import commands
 import logging
 # from dotenv import load_dotenv
-import os
 
 # load_dotenv()
 token = os.getenv("TOKEN")
@@ -83,4 +83,5 @@ async def secret_error(ctx, error):
         await ctx.send("You do not have permission to do that!")
 
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+
 
