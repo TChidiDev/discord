@@ -5,7 +5,7 @@ import logging
 # from dotenv import load_dotenv
 
 # load_dotenv()
-token = os.getenv("TOKEN")
+token = os.getenv("MTQzNzE3MTIxNTE5NzI3ODQwMQ.GOPbTa._P8UFuDr-scQ6F1dIeqp3k3atuzH5mvz_H_YpQ")
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 intents = discord.Intents.default()
@@ -83,5 +83,6 @@ async def secret_error(ctx, error):
         await ctx.send("You do not have permission to do that!")
 
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
+
 
 
