@@ -83,7 +83,8 @@ async def secret_error(ctx, error):
         await ctx.send("You do not have permission to do that!")
 
 # bot.run(token, log_handler=handler, log_level=logging.DEBUG)
-bot.run("MTQzNzE3MTIxNTE5NzI3ODQwMQ.GOPbTa._P8UFuDr-scQ6F1dIeqp3k3atuzH5mvz_H_YpQ")
+bot.run(MTQzNzE3MTIxNTE5NzI3ODQwMQ.GnaaGN.8CujkdaUlUKi7GLQtOueh9GsKediz2AY_zhFcs)
+
 
 
 
