@@ -4,8 +4,22 @@ from discord.ext import commands
 import logging
 # from dotenv import load_dotenv
 
-# load_dotenv()
-# token = os.getenv("MTQzNzE3MTIxNTE5NzI3ODQwMQ.GOPbTa._P8UFuDr-scQ6F1dIeqp3k3atuzH5mvz_H_YpQ")
+# -----------------------------
+# 1️⃣ Flask Web Server (Render needs this)
+# -----------------------------
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Bot is running on Render!"
+
+def run_flask():
+    # Render automatically provides PORT environment variable
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host="0.0.0.0", port=port)
+
+threading.Thread(target=run_flask).start()
+
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 intents = discord.Intents.default()
@@ -85,6 +99,7 @@ async def secret_error(ctx, error):
 # bot.run(token, log_handler=handler, log_level=logging.DEBUG)
 
 bot.run(os.getenv("TOKEN"))
+
 
 
 
