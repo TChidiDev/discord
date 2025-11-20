@@ -1,6 +1,9 @@
 import os
+import threading
+from flask import Flask
 import discord
 from discord.ext import commands
+from discord import app_commands
 import logging
 # from dotenv import load_dotenv
 
@@ -99,6 +102,7 @@ async def secret_error(ctx, error):
 # bot.run(token, log_handler=handler, log_level=logging.DEBUG)
 
 bot.run(os.getenv("TOKEN"))
+
 
 
 
